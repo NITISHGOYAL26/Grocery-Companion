@@ -1,0 +1,114 @@
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width:80%;
+  }
+  
+  .grocery{
+      display: flex;
+      flex-direction: column;
+      padding: 12px;
+      align-items: center;
+      max-height:90%;
+      width:45%;
+      background-color: rgb(255, 255, 255);
+      box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+      overflow-y: scroll;
+      border-radius: 20px;
+  }
+  
+  .photo{
+     display: flex;
+     justify-content: center;
+     width:55%;
+  }
+  
+  .photo img{
+    height: 100%;
+    width: 100%;
+  }
+  .heading{
+      color: rgb(38, 13, 91);
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: bold;
+  }
+  
+  .add{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .add input{
+    height: 20px;
+    border-bottom: 2px solid rgb(109, 100, 126);
+    border-top: 2px solid rgb(109, 100, 126);
+    border-left: 2px solid rgb(109, 100, 126);
+    border-right-style: none;
+    border-radius: 5px 0px 0px 5px;
+  }
+  
+  .add button{
+      border: 0;
+      cursor: pointer;
+      background-color:rgb(58, 26, 128);
+      color: #fff;
+      padding: 5px;
+      border-radius: 0px 5px 5px 0px;
+  }
+  
+  .tab button{
+        cursor: pointer;
+      background-color: transparent;
+      border: none;
+  }
+  
+  table {
+      table-layout: fixed;
+      width: 100%;
+      margin-top: 10px;
+      font-weight: 600;
+      color:rgb(70, 65, 82);
+    }
+    
+    td {
+      overflow: hidden;
+    }
+  
+    td:first-child{
+      width:20px;
+    }
+  
+    td:last-child{
+      width:20px;
+    }
+  
+  @media only screen and (min-width:750px)
+  {
+    .wrapper{
+      height: 90%;
+    }
+  }
+  
+  @media only screen and (max-width:750px)
+  {
+    .wrapper{
+      flex-direction: column;
+      height: auto;
+      align-items: flex-start;
+      margin-top: 40px;
+    }
+  
+    .grocery{
+      width: 90%;
+      height: auto;
+      overflow-y: visible;
+    }
+  
+    .photo{
+      height:350px;
+      width:70%;
+      margin-top: 20px;
+    }
+  }
